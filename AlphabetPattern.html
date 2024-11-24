@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+/*      ABCDE
+        ABCD
+        ABC
+        AB
+        A       */
+
+        let r = prompt("Enter the number of rows");
+        for (let i = 1; i <= r; i++) {
+            let char = 'A';
+            for (let j = 1; j <= r - i + 1; j++) {
+                document.write(char);
+                char = String.fromCharCode(65 + j);
+            }
+            document.writeln("<br>");
+        }
+    </script>
+</body>
+
+</html>
